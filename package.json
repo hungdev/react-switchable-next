@@ -1,0 +1,31 @@
+{
+  "name": "react-switchable-next",
+  "version": "1.0.0",
+  "description": "react-switchable with new updates",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "dependencies": {
+    "rollup": "^4.34.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.7",
+    "@babel/preset-react": "^7.26.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "postcss": "^8.5.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.84.0"
+  }
+}

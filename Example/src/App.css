@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+body,
+html {
+  height: 100%;
+  background: rgb(40, 42, 54);
+}
+
+.demo {
+  height: 100vh;
+  width: 100wv;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Muli;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  line-height: 18px;
+  color: white;
+}
+
+h1 {
+  line-height: inherit;
+  padding-bottom: 18px;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 710px;
+  height: 365px;
+  padding: 30px;
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom, rgba(224, 126, 80, 0.7), rgba(247, 59, 28, 0.69));
+  box-shadow: 0 2px 12px 12px rgb(35, 36, 53);
+}

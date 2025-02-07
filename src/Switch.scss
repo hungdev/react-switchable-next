@@ -1,0 +1,26 @@
+@import 'Global';
+.abg-switch {
+  width: $switch_width;
+  min-height: $switch_min_height;
+  box-sizing: border-box;
+  margin: $switch_margin;
+  outline: none;
+}
+
+.abg-switch__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: $switch_width;
+  height: $switch_height;
+  min-height: $switch_min_height;
+  border: 1px solid $switch_border_color;
+  border-radius: $switch_border_radius;
+  z-index: 1;
+  outline: none;
+}
+
+.abg-switch--disable {
+  opacity: $switch_disable_opacity;
+}
+

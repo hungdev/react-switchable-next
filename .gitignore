@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+
+# Editor/IDE
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Example project
+Example/node_modules/
+Example/build/
+Example/.DS_Store
+
+# Package files
+# *.tgz
