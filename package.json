@@ -1,6 +1,6 @@
 {
   "name": "react-switchable-next",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react-switchable with new updates",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
