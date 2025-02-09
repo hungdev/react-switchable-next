@@ -2,7 +2,7 @@
 
 ## Note
 
-> This is forked from [react-switchable](https://github.com/AlvaroBernalG/?react-switchable) with some changes to make it work with react 18 and convert it to function component.
+> This is forked from [react-switchable](https://github.com/AlvaroBernalG/react-switchable) with some changes to make it work with react 18 and convert it to function component.
 
 ## Install
 
