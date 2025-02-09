@@ -28,8 +28,8 @@ import "react-switchable-next/dist/index.esm.css";
 You can have as many Item children as you can fit:
 
 ```jsx
-import Switch, { Item } from "react-switchable";
-import "react-switchable/dist/main.css";
+import Switch, { Item } from "react-switchable-next";
+import "react-switchable-next/dist/index.esm.css";
 
 <div>
   <h1>What is the capital of Venezuela ?</h1>
@@ -50,62 +50,56 @@ By default the switchable component manages which `<Item />` is active internall
 Data flow from parent to child :
 
 ```js
-class App extends React.Commponent {
-  state = {
-    selectedCountryIndex: 1,
-    countries: [
-      { value: "Russia" },
-      { value: "Nigeria" },
-      { value: "Venezuela" },
-      { value: "France" },
-    ],
-  };
+import React, { useState } from "react";
 
-  render() {
-    return (
-      <Switch
-        name="countries"
-        onItemSelected={(selectedIndex) => {
-          this.setState({
-            selectedCountryIndex: selectedIndex,
-          });
-        }}
-      >
-        {countries.map((country, index) => (
-          <Item key={country.value} active={index === selectedCountryIndex} value={country.value}>
-            {country.value}
-          </Item>
-        ))}
-      </Switch>
-    );
-  }
-}
+const App = () => {
+  const [selectedCountryIndex, setSelectedCountryIndex] = useState(1);
+  const countries = [
+    { value: "Russia" },
+    { value: "Nigeria" },
+    { value: "Venezuela" },
+    { value: "France" },
+  ];
+
+  return (
+    <Switch
+      name="countries"
+      onItemSelected={(selectedIndex) => setSelectedCountryIndex(selectedIndex)}
+    >
+      {countries.map((country, index) => (
+        <Item key={country.value} active={index === selectedCountryIndex} value={country.value}>
+          {country.value}
+        </Item>
+      ))}
+    </Switch>
+  );
+};
+
+export default App;
 ```
 
 Data flow from child to parent:
 
 ```js
-class App extends React.Commponent {
-  state = {
-    selectedCountry: "Nigeria",
-  };
+import React, { useState } from "react";
+import Switch, { Item } from "react-switchable-next";
 
-  render() {
-    return (
-      <Switch
-        name="countries"
-        onItemChanged={(country) => this.setState({ selectedCountry: country })}
-      >
-        <Item value="Russia">Russia</Item>
-        <Item default value="Nigeria">
-          Nigeria
-        </Item>
-        <Item value="Venezuela"> Venezuela </Item>
-        <Item value="France"> France </Item>
-      </Switch>
-    );
-  }
-}
+const App = () => {
+  const [selectedCountry, setSelectedCountry] = useState("Nigeria");
+
+  return (
+    <Switch name="countries" onItemChanged={(country) => setSelectedCountry(country)}>
+      <Item value="Russia">Russia</Item>
+      <Item default value="Nigeria">
+        Nigeria
+      </Item>
+      <Item value="Venezuela">Venezuela</Item>
+      <Item value="France">France</Item>
+    </Switch>
+  );
+};
+
+export default App;
 ```
 
 ## Accessible
