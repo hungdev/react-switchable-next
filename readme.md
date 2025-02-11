@@ -115,7 +115,7 @@ Sierra `VoiceOver`.
 
 ## Live demo
 
-[![Try it online](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-switchable-alvarobernalg-lp823)
+[![Try it online](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/gnctdg)
 
 ## API
 
