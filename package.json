@@ -1,14 +1,15 @@
 {
   "name": "react-switchable-next",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react-switchable with new updates",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "files": [
     "dist"
   ],
+  "types": "dist/main.d.ts",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c && cp main.d.ts dist/main.d.ts",
     "prepare": "npm run build"
   },
   "peerDependencies": {
