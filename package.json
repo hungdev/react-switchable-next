@@ -12,6 +12,14 @@
     "build": "rollup -c && cp main.d.ts dist/main.d.ts",
     "prepare": "npm run build"
   },
+  "bugs": {
+    "url": "https://github.com/hungdev/react-switchable-next/issues"
+  },
+  "homepage": "https://github.com/hungdev/react-switchable-next#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungdev/react-switchable-next.git"
+  },
   "peerDependencies": {
     "react": ">=16.0.0",
     "react-dom": ">=16.0.0"
