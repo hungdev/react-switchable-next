@@ -4,6 +4,10 @@
 
 > This is forked from [react-switchable](https://github.com/AlvaroBernalG/react-switchable) with some changes to make it work with react 18 and convert it to function component.
 
+## Live demo
+
+[![Try it online](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/gnctdg)
+
 ## Install
 
 ```bash
@@ -112,10 +116,6 @@ Sierra `VoiceOver`.
   <br><br>
   <br><br>
 </p>
-
-## Live demo
-
-[![Try it online](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/gnctdg)
 
 ## API
 
